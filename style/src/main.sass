@@ -1,0 +1,194 @@
+*
+  padding: 0
+  margin: 0
+
+html,
+body
+  height: 100%
+body
+  font-family: 'Montserrat', sans-serif
+
+.action
+  border: none
+  font-weight: bold
+  border-radius: 20px
+  padding: 10px 18px
+  /* IE10+ */
+  background-image: -ms-linear-gradient(left, #F5AD05 0%, #FEE043 100%)
+
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #F5AD05 0%, #FEE043 100%)
+
+  /* Opera */
+  background-image: -o-linear-gradient(left, #F5AD05 0%, #FEE043 100%)
+
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F5AD05), color-stop(100, #FEE043))
+
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #F5AD05 0%, #FEE043 100%)
+
+  /* W3C Markup */
+  background-image: linear-gradient(to right, #F5AD05 0%, #FEE043 100%)
+
+header
+  background: #fff
+  div.row
+    display: flex
+    align-items: center
+    margin: 20px 0 20px 0
+  div.menu
+    float: right
+    nav
+      display: inline-block
+      ul
+        margin-bottom: 0
+        list-style-type: none
+        li
+          display: inline-block
+          a
+            font-weight: bold
+            padding: 10px
+            color: #000
+  div.search
+    display: inline-block
+    background: aquamarine
+    border-radius: 50px
+    width: 35px
+    height: 35px
+    span
+      display: inline-block
+      font-weight: bold
+      -webkit-transform: rotate(-45deg)
+      -moz-transform: rotate(-45deg)
+      -o-transform: rotate(-45deg)
+      transform: rotate(-45deg)
+section
+  background-size: 300px
+  background-repeat-y: no-repeat
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%)
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%)
+  /* Opera */
+  background-image: -o-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%)
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(100, #FFFFFF))
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%)
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, #FFFFFF 100%)
+  div.container
+    div.row
+      margin-top: 30px
+      h1,h4
+        font-weight: 300
+      h1
+        font-size: 35px
+      h4
+        font-size: 22px
+      p.bold
+        font-weight: bold
+      div.contact
+        img
+          margin-right: 10px
+          display: inline-block
+          float: left
+          vertical-align: middle
+        h1
+          font-weight: bold
+          margin: 0
+          margin-top: 12px
+          display: inline-block
+        hr
+          border-width: 2px
+          margin: 8px
+        p
+          margin-top: 20px
+          font-weight: bold
+        div.form
+          div.textinput
+            display: flex
+            flex-direction: row
+            div.col
+              display: flex
+              flex: 1
+              flex-direction: column
+              justify-content: space-between
+              input,
+              textarea
+                height: 47px
+                border: 1px solid rgba(55, 58, 60, 0.12)
+                width: 100%
+                color: rgba(55, 58, 60, 0.12)
+                &::placeholder
+                  color: rgba(55, 58, 60, 0.4)
+
+              input
+                max-width: 95%
+              textarea
+                height: 162px
+          input[type="checkbox"]
+            margin-top: 40px
+          a.action
+            float: right
+            color: #000
+            margin-top: 20px
+            padding-left: 50px
+            padding-right: 50px
+
+      div.sidebar
+        background: #f4f4f4
+        height: 100%
+        div.akon-box
+          position: relative
+          background: #000
+          height: 600px
+          width: 354px
+          img
+            position: absolute
+            z-index: 20
+            left: 50%
+            transform: translateX(-50%)
+            top: 15px
+        div.polygon-inner-box
+          background: green
+          height: 300px
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 18%)
+          clip-path: polygon(0 0, 100% 0, 100% 86%, 0 18%)
+          /* IE10+ */
+          background-image: -ms-linear-gradient(top left, #F5AD05 0%, #FEE043 100%)
+          /* Mozilla Firefox */
+          background-image: -moz-linear-gradient(top left, #F5AD05 0%, #FEE043 100%)
+          /* Opera */
+          background-image: -o-linear-gradient(top left, #F5AD05 0%, #FEE043 100%)
+          /* Webkit (Safari/Chrome 10) */
+          background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #F5AD05), color-stop(100, #FEE043))
+          /* Webkit (Chrome 11+) */
+          background-image: -webkit-linear-gradient(top left, #F5AD05 0%, #FEE043 100%)
+          /* W3C Markup */
+          background-image: linear-gradient(to bottom right, #F5AD05 0%, #FEE043 100%)
+        div.text
+          color: #fff
+          margin: 15px
+          margin-top: 40px
+        h2.event-text
+          text-transform: uppercase
+          font-weight: bold
+          color: #3e3e3e
+          margin-top: 20px
+          margin-left: 15px
+          font-size: 16px
+        div.events
+          div.box
+            display: inline-block
+            img
+              float: left
+              /*margin-left: 0 !important*/
+            h4,p,img
+              margin: 15px
+            h4
+              font-size: 16px
+              font-weight: bold
+            p
+              font-size: 14px
