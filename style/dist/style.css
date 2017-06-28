@@ -197,6 +197,7 @@ section {
           font-size: 14px; }
 
 footer {
+  background-attachment: fixed;
   background-image: url("../../img/footer_pic.png");
   background-position: bottom;
   background-size: cover;
@@ -206,18 +207,21 @@ footer {
   margin-top: 50px;
   position: relative; }
   footer p {
-    margin-top: 80px;
+    margin-top: 100px;
     margin-bottom: 60px;
     font-weight: 200;
     max-width: 800px;
     color: #fff;
     font-size: 14px; }
-  footer div.foot-nav {
-    position: absolute;
-    bottom: -80px;
-    right: 0;
-    left: 0;
-    height: 80px;
-    background: #999; }
+
+div.foot-after {
+  background: #1d1815; }
+  div.foot-after div.container.foot-nav {
+    height: 100px;
+    background: #1d1815; }
+    div.foot-after div.container.foot-nav div {
+      float: right; }
+      div.foot-after div.container.foot-nav div span {
+        color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
