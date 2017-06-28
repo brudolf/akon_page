@@ -38,7 +38,9 @@ header
     align-items: center
     margin: 20px 0 20px 0
   div.menu
-    float: right
+    display: flex
+    justify-content: flex-end
+    align-items: center
     nav
       display: inline-block
       ul
@@ -50,20 +52,21 @@ header
             font-weight: bold
             padding: 10px
             color: #000
-  div.search
-    display: inline-block
-    background: aquamarine
-    border-radius: 50px
-    width: 35px
-    height: 35px
-    span
-      display: inline-block
-      font-weight: bold
-      -webkit-transform: rotate(-45deg)
-      -moz-transform: rotate(-45deg)
-      -o-transform: rotate(-45deg)
-      transform: rotate(-45deg)
+  a.search
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 30px
+    height: 30px
+    background: #f1f1f1
+    border-radius: 50%
+    margin: 20px
+    img
+      width: 50%
 section
+  display: flex
+  min-height: 100vh
+  flex-direction: column
   background-size: 300px
   background-repeat-y: no-repeat
   /* IE10+ */
@@ -123,23 +126,31 @@ section
                 color: rgba(55, 58, 60, 0.12)
                 &::placeholder
                   color: rgba(55, 58, 60, 0.4)
-
               input
                 max-width: 95%
               textarea
                 height: 162px
-          input[type="checkbox"]
-            margin-top: 40px
-          a.action
-            float: right
-            color: #000
+          div.send
             margin-top: 20px
-            padding-left: 50px
-            padding-right: 50px
-
+            display: flex
+            justify-content: space-between
+            align-items: center
+            input[type="checkbox"]
+            span
+              a
+                color: #000
+                text-decoration: underline
+            a.action
+              float: right
+              color: #000
+              padding-left: 50px
+              padding-right: 50px
+        hr.bottom
+          margin: 20px 0 20px 0
       div.sidebar
         background: #f4f4f4
         height: 100%
+        padding-bottom: 200px
         div.akon-box
           position: relative
           background: #000
@@ -192,3 +203,26 @@ section
               font-weight: bold
             p
               font-size: 14px
+footer
+  background-image: url("../../img/footer_pic.png")
+  background-position: bottom
+  background-size: cover
+  background-repeat: no-repeat
+  height: 300px
+  flex: 1
+  margin-top: 50px
+  position: relative
+  p
+    margin-top: 80px
+    margin-bottom: 60px
+    font-weight: 200
+    max-width: 800px
+    color: #fff
+    font-size: 14px
+  div.foot-nav
+    position: absolute
+    bottom: -80px
+    right: 0
+    left: 0
+    height: 80px
+    background: #999

@@ -34,7 +34,9 @@ header {
     align-items: center;
     margin: 20px 0 20px 0; }
   header div.menu {
-    float: right; }
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
     header div.menu nav {
       display: inline-block; }
       header div.menu nav ul {
@@ -46,21 +48,22 @@ header {
             font-weight: bold;
             padding: 10px;
             color: #000; }
-  header div.search {
-    display: inline-block;
-    background: aquamarine;
-    border-radius: 50px;
-    width: 35px;
-    height: 35px; }
-    header div.search span {
-      display: inline-block;
-      font-weight: bold;
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
+  header a.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    margin: 20px; }
+    header a.search img {
+      width: 50%; }
 
 section {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   background-size: 300px;
   background-repeat-y: no-repeat;
   /* IE10+ */
@@ -122,17 +125,25 @@ section {
           max-width: 95%; }
         section div.container div.row div.contact div.form div.textinput div.col textarea {
           height: 162px; }
-    section div.container div.row div.contact div.form input[type="checkbox"] {
-      margin-top: 40px; }
-    section div.container div.row div.contact div.form a.action {
-      float: right;
-      color: #000;
+    section div.container div.row div.contact div.form div.send {
       margin-top: 20px;
-      padding-left: 50px;
-      padding-right: 50px; }
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      section div.container div.row div.contact div.form div.send span a {
+        color: #000;
+        text-decoration: underline; }
+      section div.container div.row div.contact div.form div.send a.action {
+        float: right;
+        color: #000;
+        padding-left: 50px;
+        padding-right: 50px; }
+    section div.container div.row div.contact hr.bottom {
+      margin: 20px 0 20px 0; }
     section div.container div.row div.sidebar {
       background: #f4f4f4;
-      height: 100%; }
+      height: 100%;
+      padding-bottom: 200px; }
       section div.container div.row div.sidebar div.akon-box {
         position: relative;
         background: #000;
@@ -184,5 +195,29 @@ section {
           font-weight: bold; }
         section div.container div.row div.sidebar div.events div.box p {
           font-size: 14px; }
+
+footer {
+  background-image: url("../../img/footer_pic.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  flex: 1;
+  margin-top: 50px;
+  position: relative; }
+  footer p {
+    margin-top: 80px;
+    margin-bottom: 60px;
+    font-weight: 200;
+    max-width: 800px;
+    color: #fff;
+    font-size: 14px; }
+  footer div.foot-nav {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    left: 0;
+    height: 80px;
+    background: #999; }
 
 /*# sourceMappingURL=style.css.map */
