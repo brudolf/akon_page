@@ -92,6 +92,35 @@ section
         font-size: 22px
       p.bold
         font-weight: bold
+      div.slider
+        margin-bottom: 20px
+        position: relative
+        div.siema
+          div
+            div
+              width: 180px
+              height: 130px
+              overflow: hidden
+              img
+        button
+          position: absolute
+          top: 45px
+          padding: 4px 10px
+          border-radius: 60%
+          background: #fff
+          border: 2px solid #000
+          font-family: FontAwesome
+          &.next
+            right: -10px
+            &::after
+              content: "\f054"
+              margin-left: 2px
+          &.prev
+            left: -10px
+            &::after
+              content: "\f053"
+              margin-right: 2px
+
       div.contact
         img
           margin-right: 10px
@@ -151,17 +180,20 @@ section
         background: #f4f4f4
         height: 100%
         padding-bottom: 200px
+        @media screen and (max-width: 992px)
+          width: 350px
+          margin: auto
         div.akon-box
           position: relative
           background: #000
           height: 600px
-          width: 354px
           img
             position: absolute
             z-index: 20
             left: 50%
             transform: translateX(-50%)
             top: 15px
+            width: 90%
         div.polygon-inner-box
           background: green
           height: 300px
@@ -224,9 +256,22 @@ footer
 div.foot-after
   background: #1d1815
   div.container.foot-nav
-    height: 100px
+    height: 120px
     background: #1d1815
+    display: flex
     div
-      float: right
+      margin: auto
+      &:nth-child(1)
+        margin-left: 0
+        span
+          color: #4c4540
+      &:nth-child(2)
+        margin-right: 0
+      &:nth-child(3)
+        margin-left: 20px
       span
-        color: #fff
+        font-size: 14px
+        color: #eaeaea
+        margin-left: 8px
+        &:nth-child(1)
+          color: #4c4540

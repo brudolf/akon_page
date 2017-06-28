@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0; }
@@ -88,6 +89,31 @@ section {
       font-size: 22px; }
     section div.container div.row p.bold {
       font-weight: bold; }
+    section div.container div.row div.slider {
+      margin-bottom: 20px;
+      position: relative; }
+      section div.container div.row div.slider div.siema div div {
+        width: 180px;
+        height: 130px;
+        overflow: hidden; }
+      section div.container div.row div.slider button {
+        position: absolute;
+        top: 45px;
+        padding: 4px 10px;
+        border-radius: 60%;
+        background: #fff;
+        border: 2px solid #000;
+        font-family: FontAwesome; }
+        section div.container div.row div.slider button.next {
+          right: -10px; }
+          section div.container div.row div.slider button.next::after {
+            content: "";
+            margin-left: 2px; }
+        section div.container div.row div.slider button.prev {
+          left: -10px; }
+          section div.container div.row div.slider button.prev::after {
+            content: "";
+            margin-right: 2px; }
     section div.container div.row div.contact img {
       margin-right: 10px;
       display: inline-block;
@@ -144,17 +170,21 @@ section {
       background: #f4f4f4;
       height: 100%;
       padding-bottom: 200px; }
+      @media screen and (max-width: 992px) {
+        section div.container div.row div.sidebar {
+          width: 350px;
+          margin: auto; } }
       section div.container div.row div.sidebar div.akon-box {
         position: relative;
         background: #000;
-        height: 600px;
-        width: 354px; }
+        height: 600px; }
         section div.container div.row div.sidebar div.akon-box img {
           position: absolute;
           z-index: 20;
           left: 50%;
           transform: translateX(-50%);
-          top: 15px; }
+          top: 15px;
+          width: 90%; }
       section div.container div.row div.sidebar div.polygon-inner-box {
         background: green;
         height: 300px;
@@ -217,11 +247,24 @@ footer {
 div.foot-after {
   background: #1d1815; }
   div.foot-after div.container.foot-nav {
-    height: 100px;
-    background: #1d1815; }
+    height: 120px;
+    background: #1d1815;
+    display: flex; }
     div.foot-after div.container.foot-nav div {
-      float: right; }
+      margin: auto; }
+      div.foot-after div.container.foot-nav div:nth-child(1) {
+        margin-left: 0; }
+        div.foot-after div.container.foot-nav div:nth-child(1) span {
+          color: #4c4540; }
+      div.foot-after div.container.foot-nav div:nth-child(2) {
+        margin-right: 0; }
+      div.foot-after div.container.foot-nav div:nth-child(3) {
+        margin-left: 20px; }
       div.foot-after div.container.foot-nav div span {
-        color: #fff; }
+        font-size: 14px;
+        color: #eaeaea;
+        margin-left: 8px; }
+        div.foot-after div.container.foot-nav div span:nth-child(1) {
+          color: #4c4540; }
 
 /*# sourceMappingURL=style.css.map */

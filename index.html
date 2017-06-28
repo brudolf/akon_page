@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Akon</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="style/dist/style.css">
   </head>
@@ -40,7 +41,15 @@
             <hr>
             <p class="bold">After winning music fans over with his 2003 multi-platinum debut Trouble, Senegalese singer Akon returns with more stories from his personal journey via his sophomore CD Konvicted. If Trouble was Akon's ode to redemption (before his music career took off he served time for car theft), Konvicted picks up at rebirth. His mission now is to reinvent himself through his salvation - music.</p>
             <div class="slider">
-
+              <div class="siema">
+                <div><img src="img/slider_img/1.png" alt="Siema image" /></div>
+                <div><img src="img/slider_img/2.png" alt="Siema image" /></div>
+                <div><img src="img/slider_img/3.png" alt="Siema image" /></div>
+                <div><img src="img/slider_img/4.png" alt="Siema image" /></div>
+                <div><img src="img/slider_img/5.png" alt="Siema image" /></div>
+              </div>
+              <button class="prev"></button>
+              <button class="next"></button>
             </div>
             <p>The son of accomplished jazz musician Mor Thiam, Akon was introduced to varied musical styles early on. "I grew-up listening to all kinds of music. Obviously I love soul songs, but I also like mixing in other types of music," Akon confesses. "For every Stevie Wonder track I've listened to, there is another by Steely Dan that helped shape me as an artist."
             <p>Although the hit single "Locked Up" earned him street credibility, the artist's multifaceted sensibilities are evident on his second album. Akon produced and wrote all but one song on Konvicted. The album features tracks recorded with Eminem (the first single, "Smack That"), Snoop Dogg ("I Want to Love You") and Styles P. (who laced Akon's debut hit single, "Locked Up"). Konvicted balances streetwise swagger, studio originality and common sense to create one of the most honest releases of 2006.</p>
@@ -130,21 +139,31 @@
     </footer>
     <div class="foot-after">
       <div class="container foot-nav">
-
-            <span>
-              <img src="img/logo_footer.png" alt=""><span>since 2011 © Lorem Ipsum</span>
-            </span>
-            <div>
-              <span>
-                <img src="img/tel.png" alt=""><span>+36 30 299 3956</span>
-              </span>
-              <span class="">
-                <img src="img/mail.png" alt=""><span>info@loremipsum.eu</span>
-              </span>
-            </div>
-
-        
+        <div>
+          <img src="img/logo_footer.png" alt=""><span>since 2011 © Lorem Ipsum</span>
+        </div>
+        <div>
+          <img src="img/tel.png" alt=""><span>+36 30 299 3956</span>
+        </div>
+        <div>
+          <img src="img/mail.png" alt=""><span>info@loremipsum.eu</span>
+        </div>
       </div>
     </div>
   </body>
+  <script src="js/siema.min.js"></script>
+  <script type="text/javascript">
+    var prev = document.querySelector('.prev');
+    var next = document.querySelector('.next');
+    prev.addEventListener('click', function () {
+      return mySiema.prev();
+    });
+    next.addEventListener('click', function () {
+      return mySiema.next();
+    });
+    const mySiema = new Siema({
+      loop: true,
+      perPage: { 800: 3, 1240: 4 }
+    });
+  </script>
 </html>
