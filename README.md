@@ -1,5 +1,7 @@
 # Akon Webpage
 
-npm install
-grunt sass
-open index.html
+Run the following commands
+
+npm install <br />
+grunt sass <br />
+open index.html <br />
