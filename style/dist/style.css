@@ -1,0 +1,276 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  font-family: "Montserrat", sans-serif; }
+
+.action {
+  border: none;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 18px;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(left, #F5AD05 0%, #FEE043 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(left, #F5AD05 0%, #FEE043 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(left, #F5AD05 0%, #FEE043 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F5AD05), color-stop(100, #FEE043));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(left, #F5AD05 0%, #FEE043 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to right, #F5AD05 0%, #FEE043 100%); }
+
+header {
+  background: #fff; }
+  header div.row {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 20px 0; }
+  header div.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    header div.menu nav {
+      display: inline-block; }
+      header div.menu nav ul {
+        margin-bottom: 0;
+        list-style-type: none; }
+        header div.menu nav ul li {
+          display: inline-block; }
+          @media screen and (max-width: 991px) {
+            header div.menu nav ul li {
+              display: inherit; } }
+          header div.menu nav ul li a {
+            font-weight: bold;
+            padding: 10px;
+            color: #000; }
+            header div.menu nav ul li a:hover {
+              text-decoration: none; }
+  header a.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    margin: 20px; }
+    header a.search img {
+      width: 50%; }
+
+section {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-size: 300px;
+  background-repeat-y: no-repeat;
+  /* IE10+ */
+  background-image: -ms-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%);
+  /* Opera */
+  background-image: -o-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #f7f7f7), color-stop(100, #FFFFFF));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(top, #f7f7f7 0%, #FFFFFF 100%);
+  /* W3C Markup */
+  background-image: linear-gradient(to bottom, #f7f7f7 0%, #FFFFFF 100%); }
+  section div.container div.row {
+    margin-top: 30px; }
+    section div.container div.row h1, section div.container div.row h4 {
+      font-weight: 300; }
+    section div.container div.row h1 {
+      font-size: 35px; }
+    section div.container div.row h4 {
+      font-size: 22px; }
+    section div.container div.row p.bold {
+      font-weight: bold; }
+    section div.container div.row div.slider {
+      margin-bottom: 20px;
+      position: relative; }
+      section div.container div.row div.slider div.siema div div {
+        width: 180px;
+        height: 130px;
+        overflow: hidden; }
+      section div.container div.row div.slider button {
+        position: absolute;
+        top: 45px;
+        padding: 4px 10px;
+        border-radius: 60%;
+        background: #fff;
+        border: 2px solid #000;
+        font-family: FontAwesome; }
+        section div.container div.row div.slider button.next {
+          right: -10px; }
+          section div.container div.row div.slider button.next::after {
+            content: "";
+            margin-left: 2px; }
+        section div.container div.row div.slider button.prev {
+          left: -10px; }
+          section div.container div.row div.slider button.prev::after {
+            content: "";
+            margin-right: 2px; }
+    section div.container div.row div.contact img {
+      margin-right: 10px;
+      display: inline-block;
+      float: left;
+      vertical-align: middle; }
+    section div.container div.row div.contact h1 {
+      font-weight: bold;
+      margin: 0;
+      margin-top: 12px;
+      display: inline-block; }
+    section div.container div.row div.contact hr {
+      border-width: 2px;
+      margin: 8px; }
+    section div.container div.row div.contact p {
+      margin-top: 20px;
+      font-weight: bold; }
+    section div.container div.row div.contact div.form div.textinput {
+      display: flex;
+      flex-direction: row; }
+      section div.container div.row div.contact div.form div.textinput div.col {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between; }
+        section div.container div.row div.contact div.form div.textinput div.col input,
+        section div.container div.row div.contact div.form div.textinput div.col textarea {
+          height: 47px;
+          border: 1px solid rgba(55, 58, 60, 0.12);
+          width: 100%;
+          color: rgba(55, 58, 60, 0.12); }
+          section div.container div.row div.contact div.form div.textinput div.col input::placeholder,
+          section div.container div.row div.contact div.form div.textinput div.col textarea::placeholder {
+            color: rgba(55, 58, 60, 0.4); }
+        section div.container div.row div.contact div.form div.textinput div.col input {
+          max-width: 95%; }
+        section div.container div.row div.contact div.form div.textinput div.col textarea {
+          height: 162px; }
+    section div.container div.row div.contact div.form div.send {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      section div.container div.row div.contact div.form div.send span a {
+        color: #000;
+        text-decoration: underline; }
+      section div.container div.row div.contact div.form div.send a.action {
+        float: right;
+        color: #000;
+        padding-left: 50px;
+        padding-right: 50px; }
+    section div.container div.row div.contact hr.bottom {
+      margin: 20px 0 20px 0; }
+    section div.container div.row div.sidebar {
+      background: #f4f4f4;
+      height: 100%;
+      padding-bottom: 200px; }
+      @media screen and (max-width: 991px) {
+        section div.container div.row div.sidebar {
+          width: 350px;
+          margin: auto; } }
+      section div.container div.row div.sidebar div.akon-box {
+        position: relative;
+        background: #000;
+        height: 600px; }
+        section div.container div.row div.sidebar div.akon-box img {
+          position: absolute;
+          z-index: 20;
+          left: 50%;
+          transform: translateX(-50%);
+          top: 15px;
+          width: 90%; }
+      section div.container div.row div.sidebar div.polygon-inner-box {
+        background: green;
+        height: 300px;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 86%, 0 18%);
+        clip-path: polygon(0 0, 100% 0, 100% 86%, 0 18%);
+        /* IE10+ */
+        background-image: -ms-linear-gradient(top left, #F5AD05 0%, #FEE043 100%);
+        /* Mozilla Firefox */
+        background-image: -moz-linear-gradient(top left, #F5AD05 0%, #FEE043 100%);
+        /* Opera */
+        background-image: -o-linear-gradient(top left, #F5AD05 0%, #FEE043 100%);
+        /* Webkit (Safari/Chrome 10) */
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #F5AD05), color-stop(100, #FEE043));
+        /* Webkit (Chrome 11+) */
+        background-image: -webkit-linear-gradient(top left, #F5AD05 0%, #FEE043 100%);
+        /* W3C Markup */
+        background-image: linear-gradient(to bottom right, #F5AD05 0%, #FEE043 100%); }
+      section div.container div.row div.sidebar div.text {
+        color: #fff;
+        margin: 15px;
+        margin-top: 40px; }
+      section div.container div.row div.sidebar h2.event-text {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #3e3e3e;
+        margin-top: 20px;
+        margin-left: 15px;
+        font-size: 16px; }
+      section div.container div.row div.sidebar div.events div.box {
+        display: inline-block; }
+        section div.container div.row div.sidebar div.events div.box img {
+          float: left;
+          /*margin-left: 0 !important */ }
+        section div.container div.row div.sidebar div.events div.box h4, section div.container div.row div.sidebar div.events div.box p, section div.container div.row div.sidebar div.events div.box img {
+          margin: 15px; }
+        section div.container div.row div.sidebar div.events div.box h4 {
+          font-size: 16px;
+          font-weight: bold; }
+        section div.container div.row div.sidebar div.events div.box p {
+          font-size: 14px; }
+
+footer {
+  background-attachment: fixed;
+  background-image: url("../../img/footer_pic.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  flex: 1;
+  margin-top: 50px;
+  position: relative; }
+  footer p {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-weight: 200;
+    max-width: 800px;
+    color: #fff;
+    font-size: 14px; }
+
+div.foot-after {
+  background: #1d1815; }
+  div.foot-after div.container.foot-nav {
+    padding: 0;
+    height: 120px;
+    background: #1d1815;
+    display: flex; }
+    div.foot-after div.container.foot-nav div {
+      margin: auto; }
+      div.foot-after div.container.foot-nav div:nth-child(1) {
+        margin-left: 0; }
+        div.foot-after div.container.foot-nav div:nth-child(1) span {
+          color: #4c4540; }
+      div.foot-after div.container.foot-nav div:nth-child(2) {
+        margin-right: 0; }
+      div.foot-after div.container.foot-nav div:nth-child(3) {
+        margin-left: 20px; }
+      div.foot-after div.container.foot-nav div span {
+        font-size: 14px;
+        color: #eaeaea;
+        margin-left: 8px; }
+        div.foot-after div.container.foot-nav div span:nth-child(1) {
+          color: #4c4540; }
+
+/*# sourceMappingURL=style.css.map */
