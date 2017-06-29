@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Akon</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="style/dist/style.css">
@@ -131,7 +131,7 @@
       </div>
     </section>
     <footer>
-      <div class="container footer">
+      <div class="container">
         <div class="row">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat sed felis eu commodo. Nulla ultricies nibh erat. Curabitur vulputate ante sed dolor sollicitudin dictum. Vivamus quis dui ut lectus facilisis aliquet vel non est. Quisque malesuada rutrum sapien, non auctor justo facilisis sodales. Cras quis dui felis. Nulla facilisi. Curabitur blandit justo dui.</p>
         </div>
@@ -155,15 +155,15 @@
   <script type="text/javascript">
     var prev = document.querySelector('.prev');
     var next = document.querySelector('.next');
+    var mySiema = new Siema({
+      loop: true,
+      perPage: { 700: 3, 1240: 4 }
+    });
     prev.addEventListener('click', function () {
       return mySiema.prev();
     });
     next.addEventListener('click', function () {
       return mySiema.next();
-    });
-    const mySiema = new Siema({
-      loop: true,
-      perPage: { 800: 3, 1240: 4 }
     });
   </script>
 </html>

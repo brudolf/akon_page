@@ -48,10 +48,14 @@ header
         list-style-type: none
         li
           display: inline-block
+          @media screen and (max-width: 991px)
+            display: inherit
           a
             font-weight: bold
             padding: 10px
             color: #000
+            &:hover
+              text-decoration: none
   a.search
     display: flex
     justify-content: center
@@ -180,7 +184,7 @@ section
         background: #f4f4f4
         height: 100%
         padding-bottom: 200px
-        @media screen and (max-width: 992px)
+        @media screen and (max-width: 991px)
           width: 350px
           margin: auto
         div.akon-box
@@ -256,6 +260,7 @@ footer
 div.foot-after
   background: #1d1815
   div.container.foot-nav
+    padding: 0
     height: 120px
     background: #1d1815
     display: flex
